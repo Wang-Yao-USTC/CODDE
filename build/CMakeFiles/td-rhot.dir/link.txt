@@ -1,1 +1,0 @@
-/usr/bin/c++  -std=c++11 -g -Wall -Ofast -march=native  -rdynamic CMakeFiles/td-rhot.dir/src/apps/td-rhot.cpp.o  -o ../bin/td-rhot  -L"/home/wangyao/Github Files/CODDE/lib" -Wl,-rpath,"/home/wangyao/Github Files/CODDE/lib" ../lib/libcodde.a -ljson11 -larmadillo -llapack -lblas -lgfortran 
