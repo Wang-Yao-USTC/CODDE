@@ -1,0 +1,20 @@
+{
+    "td-rhot": {
+        "tf": 5.0, 
+        "dt": 0.005, 
+        "inistate": 0, 
+        "pulse": {
+            "swit": 0, 
+            "freq": 0.2, 
+            "sigm": 0.1, 
+            "ampl": 0.5
+        }, 
+        "ti": 0.5
+    }, 
+    "corr": {
+        "n4eq": 8000, 
+        "dt": 0.005, 
+        "nt": 8000, 
+        "inistate": 0
+    }
+}

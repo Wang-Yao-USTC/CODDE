@@ -1,0 +1,14 @@
+{
+    "syst": {
+        "hamsFile": "inp_hams.mat",
+        "qmdsFile": "inp_qmds.mat"
+    },
+    "bath": {
+        "modeFile": "inp_mode.mat",
+        "etalFile": "inp_etal.mat",
+        "etarFile": "inp_etar.mat",
+        "etaaFile": "inp_etaa.mat",
+        "expnFile": "inp_expn.mat",
+        "delrFile": "inp_delr.mat"
+    }
+}

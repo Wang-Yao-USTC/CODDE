@@ -31,7 +31,6 @@ if __name__ == '__main__':
     hams = np.zeros((2,2),dtype=complex)
     hams[0,0] = 0.5
     hams[1,1] = -0.5
-    #hams[0,1]=hams[1,0]=0.5
 
     qmds = np.zeros((nmod,2,2),dtype=complex)
     qmds[0,0,1] = 1.0
@@ -39,27 +38,29 @@ if __name__ == '__main__':
 
     arma.save (hams,ini['syst']['hamsFile'])
     arma.save (qmds,ini['syst']['qmdsFile'])
-    
-    # hidx
-    ini['hidx']['trun'] = 0
-    ini['hidx']['lmax'] = 12
-    ini['hidx']['nmax'] = 100000
-    ini['hidx']['ferr'] = 1.0e-10
 
-    #proprho
-    jsonInit = {"deom":ini,
-                "rhot":{
+    jsonInit = {"td-rhot":{
+                    "inistate": 0,
+                    "dt": 0.005,
+                    "ti":0.5,
+                    "tf":5.0,
+                    "pulse": {
+                    "ampl":0.5,
+                    "freq":0.2,
+                    "sigm":0.1,
+                    "swit":0
+                    },
+                },
+                "corr":{
+                    "inistate": 0,
                     "dt": 0.005,
                     "nt": 8000,
-                    "nk": 1,
-					"inistate":1,
-					"xpflag": 1,
-					"staticErr": 1.0e-10,
-                    "sdipFile": "inp_sdip.mat",
-                    "pdipFile": "inp_pdip.mat",
-					"bdipFile": "inp_bdip.mat"
+					"n4eq":8000
                 },
             }
+
+
+
 
     sdip = np.zeros((2,2),dtype=float)
     sdip[0,1]=sdip[1,0]=1.0
@@ -70,10 +71,7 @@ if __name__ == '__main__':
     arma.save(pdip,'inp_pdip.mat')
 
     bdip = np.zeros(4,dtype=float)
-    bdip[0]=0.0
-    bdip[1]=0.0
-    bdip[2]=0.0
-    bdip[3]=0.0
+    bdip.fill(0.0)
     arma.save(bdip,'inp_bdip.mat')
 
     with open('input.json','w') as f:

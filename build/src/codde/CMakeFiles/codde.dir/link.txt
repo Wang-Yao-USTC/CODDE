@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../lib/libcodde.a  CMakeFiles/codde.dir/rem.cpp.o
+/usr/bin/ranlib ../../../lib/libcodde.a

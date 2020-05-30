@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/json11.hpp
+string
+-
+vector
+-
+map
+-
+memory
+-
+initializer_list
+-
+
+../src/codde/rem.hpp
+armadillo
+-
+
+/home/wangyao/Github Files/CODDE/src/apps/td-rhot.cpp
+iostream
+-
+armadillo
+-
+complex
+-
+cstdio
+-
+json11.hpp
+/home/wangyao/Github Files/CODDE/src/apps/json11.hpp
+rem.hpp
+/home/wangyao/Github Files/CODDE/src/apps/rem.hpp
+

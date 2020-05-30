@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/wangyao/Github Files/CODDE/src/codde/rem.cpp
+armadillo
+-
+iostream
+-
+algorithm
+-
+cmath
+-
+complex
+-
+rem.hpp
+/home/wangyao/Github Files/CODDE/src/codde/rem.hpp
+
+/home/wangyao/Github Files/CODDE/src/codde/rem.hpp
+armadillo
+-
+
