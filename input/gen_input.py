@@ -42,7 +42,7 @@ if __name__ == '__main__':
     jsonInit = {"td-rhot":{
                     "inistate": 0,
                     "dt": 0.005,
-                    "ti":0.5,
+                    "ti":5.0,
                     "tf":5.0,
                     "pulse": {
                     "ampl":0.5,
