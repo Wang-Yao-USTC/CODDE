@@ -42,3 +42,13 @@ else()
     INSTALL_COMMAND cp <SOURCE_DIR>/json11.hpp <INSTALL_DIR>/include && cp <BINARY_DIR>/libjson11.a <INSTALL_DIR>/lib
   )
 endif()
+if (EXISTS ${PROJECT_SOURCE_DIR}/include/armadillo)
+else()
+  ExternalProject_Add(armadillo
+    URL file:///home/codes/armadillo-9.800.2.tar.xz
+    PREFIX ${PROJECT_BINARY_DIR}/thirdparty
+    INSTALL_DIR ${PROJECT_SOURCE_DIR}
+    CMAKE_ARGS -DCMAKE_INSTALL_PREFIX:PATH=<INSTALL_DIR>
+  )
+endif()
+
