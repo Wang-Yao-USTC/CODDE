@@ -2,14 +2,16 @@
 
 to be added ...
 
-### Dependence
+### Dependences
 
-#### armadillo
-#### json11 
+[Armadillo](http://arma.sourceforge.net/)
+
+[json11](https://github.com/dropbox/json11.git) 
 
 ### Jekyll Themes
 
 Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Wang-Yao-USTC/CODDE/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+
 
 ### Support or Contact
 
