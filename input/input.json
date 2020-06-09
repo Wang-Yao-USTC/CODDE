@@ -1,4 +1,38 @@
 {
+    "deom": {
+        "syst": {
+            "qmdsFile": "inp_qmds.mat", 
+            "hamsFile": "inp_hams.mat"
+        }, 
+        "bath": {
+            "pade": 1, 
+            "temp": 0.5, 
+            "etaaFile": "inp_etaa.mat", 
+            "etarFile": "inp_etar.mat", 
+            "delrFile": "inp_delr.mat", 
+            "expnFile": "inp_expn.mat", 
+            "nmod": 1, 
+            "npsd": 3, 
+            "jomg": [
+                {
+                    "jdru": [
+                        [
+                            0.05, 
+                            0.5
+                        ]
+                    ]
+                }
+            ], 
+            "modeFile": "inp_mode.mat", 
+            "etalFile": "inp_etal.mat"
+        }
+    }, 
+    "corr": {
+        "n4eq": 8000, 
+        "dt": 0.01, 
+        "nt": 200000, 
+        "inistate": 0
+    }, 
     "td-rhot": {
         "tf": 5.0, 
         "dt": 0.005, 
@@ -10,11 +44,5 @@
             "ampl": 0.5
         }, 
         "ti": 5.0
-    }, 
-    "corr": {
-        "n4eq": 8000, 
-        "dt": 0.005, 
-        "nt": 8000, 
-        "inistate": 0
     }
 }
