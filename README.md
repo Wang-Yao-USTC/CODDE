@@ -5,7 +5,6 @@ to be added ...
 ### Dependences
 
 [Armadillo](http://arma.sourceforge.net/)
-
 [json11](https://github.com/dropbox/json11.git) 
 
 ### Jekyll Themes
